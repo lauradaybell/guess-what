@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f3f3fe; */
+}
+
+body {
+    background-color: #E1E2E3;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 145%;
+    /* margin: 12px; */
+    background-color: #AB5A7D;
+    padding: 12px;
+    
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #17334F;
+}
+.logoutBtn {
+    width: fit-content;
+    padding: 13px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+    box-shadow: #643E60 5px -5px 25px inset;
+    border: 1px solid #643E60;
+}
+.canvas{
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 10px;
+    border: 1px solid #643E60;
+}
+
+.postContainer {
+    height: fit-content;
+    padding: 6px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.authInput{
+    display: block;
+    margin: auto;
+    height: 19%;
+    margin-top: 49px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.authForm {
+    height: 55vh;
+    
+}
+
+.authBtn {
+    display: block;
+    margin: auto;
+    height: 14%;
+    margin-top: 49px;
+    width: 32%;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    box-shadow: #643E60 5px -5px 25px inset;
+}
+
+.memberBtn {
+    display: flex;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    /* background-color: #616E8D; */
+    box-shadow: #643E60 6px -12px 40px inset;
+}
+
+h1 {
+    color: #AB5A7D;
+}
+
+h4 {
+    color: #AB5A7D;
+}
+
+.newPostTitle {
+    display: flex;
+    margin: auto;
+    font-size: 28px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newPostBtn {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: #643E60 6px -12px 40px inset;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+
+.newCanvas {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 10px;
+    border: 1px solid #643E60;
+}
+
+.newPostForm {
+    padding: 20px;
+}
+
+.commentInput {
+    border: 1px solid #643E60;
+    border-radius: 9px;
+    padding: 6px;
+    text-align: center;
+    
+}
+
+.commentForm {
+    margin-top: 10px;
+}
+
+.commentBtn {
+    border: 1px solid #643E60;
+    box-shadow: #643E60 1px -2px 6px inset;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 11px;
+    margin-top: 10px;
+    
+}
+
+.showComments {
+    border: 1px solid #643E60;
+    box-shadow: #643E60 1px -2px 6px inset;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+
+.deletePostBtn {
+    border: 1px solid #643E60;
+    box-shadow: #643E60 4px -5px 9px inset;
+    padding: 9px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.commentText {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #643E60;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+.username {
+    color: #AB5A7D;
+}
+
+@media screen and (min-width: 1400px) {
+    .nav {
+        padding: 8px;
+    }
+    a {
+        padding: 30px;
+    }
+    .logoutBtn {
+        font-size: 18px;
+        
+    }
+}
