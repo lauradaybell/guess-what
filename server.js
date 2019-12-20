@@ -10,6 +10,7 @@ const SECRET = process.env.SECRET || "trout smashed oak tortoise"
 
 app.use(express.json())
 app.use(morgan('dev'))
+    app.use(express.static(path.join(__dirname, 'client', 'build')))
 
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/guessWhat', 
@@ -20,7 +21,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/guessWhat
         useUnifiedTopology: true
     }, () => console.log('Connected to MongoDB'))
 
-    app.use(express.static(path.join(__dirname, 'client', 'build')))
 
     
 // routes
