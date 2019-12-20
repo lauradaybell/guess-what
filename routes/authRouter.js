@@ -10,7 +10,7 @@ authRouter.post("/signup", (req, res, next) => {
             res.status(500)
             return next(err)
         }
-        if(user) {
+        if(user !== null) {
             res.status(400)
             return next(new Error("That username already exists"))
         }
@@ -48,7 +48,7 @@ authRouter.post("/login", (req, res, next) => {
             }
             const token = jwt.sign(user.withoutPassword(), process.env.SECRET)
 
-            return res.status(200).send({user:user.withoutPassword(), token})
+            return res.status(200).send({user:user.withoutPassword(), token: token, success: true})
         })
             
         
