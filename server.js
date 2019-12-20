@@ -6,7 +6,7 @@ const path = require("path")
 require("dotenv").config()
 const expressJwt = require('express-jwt')
 const PORT = process.env.PORT || 7000
-const SECRET = process.env.SECRET || "trout smashed oak tortoise"
+const secret = process.env.SECRET || "trout smashed oak tortoise"
 
 app.use(express.json())
 app.use(morgan('dev'))
@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/guessWhat
     
 // routes
     app.use("/auth", require("./routes/authRouter"))
-    app.use("/api", expressJwt({secret: SECRET}))
+    app.use("/api", expressJwt({secret: process.env.SECRET}))
     app.use("/api/post", require("./routes/postRouter"))
     app.use("/api/comment", require("./routes/commentRouter"))
     app.use("/comment", require("./routes/getCommentRouter"))
