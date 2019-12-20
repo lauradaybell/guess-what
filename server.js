@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/guessWhat
     
 // routes
     app.use("/auth", require("./routes/authRouter"))
-    app.use("/api", expressJwt({secret: process.env.SECRET}))
+    app.use("/api", expressJwt({secret: secret}))
     app.use("/api/post", require("./routes/postRouter"))
     app.use("/api/comment", require("./routes/commentRouter"))
     app.use("/comment", require("./routes/getCommentRouter"))
