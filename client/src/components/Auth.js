@@ -33,6 +33,7 @@ function Auth() {
     }
     return(
         <div>
+            <h3 className="signIn">Guess What</h3>
             {!toggle
             ?
                 <>
