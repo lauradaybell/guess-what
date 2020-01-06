@@ -188,14 +188,21 @@ h4 {
 .username {
     color: #AB5A7D;
 }
-.signIn {
+.signIn, .signIn+p{
     text-align: center;
     color: #E1E2E3;
     background-color: #643E60;
-    font-size: 67px;
-    margin-top: 20px;
     
 }
+.signIn {
+    font-size: 67px;
+    margin-top: 20px;
+}
+p {
+    font-size: 20px;
+    padding: 10px;
+}
+
 @media screen and (min-width: 1400px) {
     .nav {
         padding: 8px;
